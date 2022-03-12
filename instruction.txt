@@ -1,0 +1,161 @@
+--- PLEASE READ CAREFULLY ---------------------------------------------------------------------------------------------
+This problemset will be updated on March 12, 1pm.
+There are total of 2 problem set and total time allocated for the whole test is 5 hours.
+The candidates have to submit the code by March 12, 6pm.
+The submission with incorrect results will not be considered.
+The results that is received after March 12, 6pm will not be considered.
+Top 5 people who submit the code that produces correct result as fast as possible before 6pm, March 12 will be called for internship.
+Only the selected ones will receive the phone call and an email. We won't email to those who are not selected. If selected, You will receive a phone call and also an
+email by March 13, 1pm.
+
+
+---- WHERE IS THE PROBLEM SET?
+Final test Git repository: https://github.com/rabindrakharel/March12FinalTest [To be updated on March 12, 1pm]
+
+---- WHERE DO YOU SUBMIT THE RESLT SET?
+Final test submission form: https://docs.google.com/forms/d/17UEuCXz8MduEUpeAsXeTjcCWsGQnsj76nllh0Lsih6A/edit
+
+------ For those who are selected and who receive the call ----------------------------------------------------------
+You must bring all the code of Week 1, Week 2, Week 3 and Final test; and explain how you solved the problem. You will have to be physically present on March 14th.
+
+------ For those who not get selected  -------------------
+There are going to be a lot of openings in the future. We will consider you above all others. Let's keep in touch :)
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+PROBLEM SET 1:
+--------------------------------------------------------------------------------------------------------------------
+
+-- Dataset intelligentGuessingDataSet.csv has a format of [rownum,firstname,lastname,email,Email Pattern,Comments]
+rownum 1 to 22 has got the patterns for the left part of the email. Your task is to complete the patterns for rownum 23 to 53. The submission file problemset1_submission.csv must have headers [rownum,firstname,lastname,email,Email Pattern]
+Example of pattern:
+<11> - Firstname
+<22> - Lastname
+<1> - First letter of firstname
+<2> - First letter of lastname
+<20> First part of lastname
+<21> Second part of lastname
+<11-f2l>first 2 letters of firstname
+and more.
+
+Submission structure:
+repository name: March12FinalTest
+                 -- intelligentGuessingDataSet.csv
+                 -- problemset1_submission.csv
+                 -- instruction.txt
+		 -- intelligentGuessingCodeFolder {Please put all your python or SQL code here.}
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+PROBLEM SET 2:
+--------------------------------------------------------------------------------------------------------------------
+
++--------------+---------+
+| Column Name  | Type    |
++--------------+---------+
+| id           | int     |
+| name         | varchar |
+| salary       | int     |
+| departmentId | int     |
++--------------+---------+
+id is the primary key column for this table.
+departmentId is a foreign key of the ID from the Department table.
+Each row of this table indicates the ID, name, and salary of an employee. It also contains the ID of their department.
+
+
+Table: Department
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| id          | int     |
+| name        | varchar |
++-------------+---------+
+id is the primary key column for this table.
+Each row of this table indicates the ID of a department and its name.
+
+
+A company's executives are interested in seeing who earns the most money in each of the company's departments. A high earner in a department is an employee who has a salary in the top three unique salaries for that department.
+
+Write an SQL query to find the employees who are high earners in each of the departments.
+
+Return the result table in any order.
+
+The query result format is in the following example.
+
+
+
+Example 1:
+
+Input:
+Employee table:
++----+-------+--------+--------------+
+| id | name  | salary | departmentId |
++----+-------+--------+--------------+
+| 1  | Joe   | 85000  | 1            |
+| 2  | Henry | 80000  | 2            |
+| 3  | Sam   | 60000  | 2            |
+| 4  | Max   | 90000  | 1            |
+| 5  | Janet | 69000  | 1            |
+| 6  | Randy | 85000  | 1            |
+| 7  | Will  | 70000  | 1            |
++----+-------+--------+--------------+
+Department table:
++----+-------+
+| id | name  |
++----+-------+
+| 1  | IT    |
+| 2  | Sales |
++----+-------+
+Output:
++------------+----------+--------+
+| Department | Employee | Salary |
++------------+----------+--------+
+| IT         | Max      | 90000  |
+| IT         | Joe      | 85000  |
+| IT         | Randy    | 85000  |
+| IT         | Will     | 70000  |
+| Sales      | Henry    | 80000  |
+| Sales      | Sam      | 60000  |
++------------+----------+--------+
+Explanation:
+In the IT department:
+- Max earns the highest unique salary
+- Both Randy and Joe earn the second-highest unique salary
+- Will earns the third-highest unique salary
+
+In the Sales department:
+- Henry earns the highest salary
+- Sam earns the second-highest salary
+- There is no third-highest salary as there are only two employees
+
+Test Data and Schema:
+Create table If Not Exists Employee (id int, name varchar(255), salary int, departmentId int)
+Create table If Not Exists Department (id int, name varchar(255))
+Truncate table Employee
+insert into Employee (id, name, salary, departmentId) values ('1', 'Joe', '85000', '1')
+insert into Employee (id, name, salary, departmentId) values ('2', 'Henry', '80000', '2')
+insert into Employee (id, name, salary, departmentId) values ('3', 'Sam', '60000', '2')
+insert into Employee (id, name, salary, departmentId) values ('4', 'Max', '90000', '1')
+insert into Employee (id, name, salary, departmentId) values ('5', 'Janet', '69000', '1')
+insert into Employee (id, name, salary, departmentId) values ('6', 'Randy', '85000', '1')
+insert into Employee (id, name, salary, departmentId) values ('7', 'Will', '70000', '1')
+Truncate table Department
+insert into Department (id, name) values ('1', 'IT')
+insert into Department (id, name) values ('2', 'Sales')
+
+
+
+Submission structure:
+repository name: March12FinalTest
+				 -- problemset2_data.sql
+         -- problemset2_solution.sql

@@ -1,0 +1,54 @@
+rownum,firstname,lastname,email,Email Pattern,Comments
+1,jonathan,de montis,jonathan@gmail.com,<11>,firstname
+2,,Mcgregar,mcgregar@gmail.com,<22>,lastname
+3,andrea,ôvidio bonetti,a.bonetti@gmail.com,<1>.<21>,first letter of firstname.second part of the last name
+4,tarik,shaaban,t.shaaban@gmail.com,<1>.<22>,first letter of firstname.lastname
+5,segolene,caillemer,scaillemer@gmail.com,<1><22>,first letter of firstname.lastname
+6,caroline,benayoun,caroline@gmail.com,<11>,firstname
+7,môises,delos reyes,mdelosreyes@gmail.com,<1><20><21>,first letter of firstname.first part of lastname AND second part of the lastname
+8,vïctor,r guerra,victor.guerra@gmail.com,<11><20>,Firstname AND first part of the last name
+9,chuan-chu,chou,chu_chou@gmail.com,<11-f3l>_<22>,first 3 letters of firstname_lastname
+10,ivy--,lee,ivlee@gmail.com,<11-f2l><22>,first 2 letters of firstname AND lastname
+11,peiyan,sai,pesai@gmail.com,<11-f2l><22>,first 2 letters of firstname AND lastname
+12,lieven,el arouni,lieven.elarouni@gmail.com,<11>.<20><21>,first letter of firstname.first part of lastname AND second part of the lastname
+13,elzbieta,bien-przybek,e.bien@gmail.com,<1>.<20>,Firstname AND first part of the last name
+14,amira,,amshaaban@gmail.com,<11-f2l><22>,"first 2 letters of firstname AND lastname, Last name is missing but It was possible to intelligently guess from row number 4 tarik shaaban"
+15,waleed,essam,waessam@gmail.com,<11-f2l><22>,first 2 letters of firstname AND lastname
+16,shrief,ezzat,shezzat@gmail.com,<11-f2l><22>,first 2 letters of firstname AND lastname
+17,katrin,de grenier,katrin.degrenier@gmail.com,<11>.<20><21>,Firstname.Firstpart of the last name AND second part of the firstname
+18,pieter,de weerd,pieter.de-weerd@gmail.com,<11>.<20>-<21>,Firstname.firstpart of the last name-second part of the lastname
+19,Jôn,Jôn Deckors,jon-deckors@gmail.com,<11>-<20>,
+20,david,lecomte,david.lecomte@gmail.com,<11>.<22>,
+21,ian,ian ditullio,ian.ditullio@gmail.com,,
+22,myrïam,el' harraq,myri.elharraq@gmail.com,,
+23,,le roux,lieven.leroux@gmail.com,,"The code should do a intelligent guessing of the firstname, lieven is in row number 12"
+24,jordane,de villaret,jordane.devillaret@gmail.com,,
+25,salem,al shahrani,salem.alshahrani@gmail.com,,
+26,ronan,mc governronan,ronan.mcgovern@gmail.com,,
+27,saqr,fassi fehri,saqr.fassifehri@gmail.com,,
+28,,de jaham,shrief.dejaham@gmail.com,,"The code should do a intelligent guessing of the firstname, shrief is in row number 17"
+29,nathalie,de louvigny,nathalie.delouvigny@gmail.com,,
+30,angelique,de simencourt,angelique.desimencourt@gmail.com,,
+31,smahane,,smahane.elarouni@gmail.com,,"The code do a intelligent guessing of lastname, el arouni is present in row number 13"
+32,jean,baptiste poulain,jeanbaptiste.poulain@gmail.com,,
+33,nelly,pais pereira,nelly.paispereira@gmail.com,,
+34,amir,ben mansour,amir.benmansour@gmail.com,,
+35,nicolas,de gols,nicolas.degols@gmail.com,,
+36,sander,de jong,sander.dejong@gmail.com,,
+37,mostafa,el enany,mostafa.elenany@gmail.com,,
+38,eric,a' laporte,eric.laporte@gmail.com,,
+39,anne-laure,chamorand,annelaure.chamorand@gmail.com,,
+40,bonifacio,d'costa kull,bonifacio.dcosta@gmail.com,,
+41,adele,de montmarin,adele.demontmarin@gmail.com,,
+42,caroline,de caigny,caroline.decaigny@gmail.com,,
+43,khang,nguyen trieu,khang.nguyentrieu@gmail.com,,
+44,barbara,de manincor,barbara.demanincor@gmail.com,,
+45,claire,le calvez,claire.lecalvez@gmail.com,,
+46,renate,van roon,renate.vanroon@gmail.com,,
+47,angelique,de simencourt,angelique.desimencourt@gmail.com,,
+48,ian,di tullio,ian.ditullio@gmail.com,,
+49,lennart,c bachmann,lennart.bachmann@gmail.com,,
+50,chad,guyer,cguyer@gmail.com,,
+51,marcel,de jong,marcel.dejong@gmail.com,,
+52,andrea,sala,andrea.sala@gmail.com,,
+53,armin,grathwohl,armin.grathwohl@gmail.com,,
